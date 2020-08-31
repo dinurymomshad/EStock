@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "981186721077",
+    "firebase_url": "https://estock-magpie.firebaseio.com",
+    "project_id": "estock-magpie",
+    "storage_bucket": "estock-magpie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981186721077:android:d13dd9cf4ce5ff7d1d887c",
+        "android_client_info": {
+          "package_name": "com.magpieanalytics.estock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981186721077-47jvjnq5eb579gv2kpp1sgjlsqk1hq4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2iKctlWJt5V-K0vo_EWKkcCOxurN0Eow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981186721077-47jvjnq5eb579gv2kpp1sgjlsqk1hq4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
