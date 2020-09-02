@@ -15,6 +15,9 @@ class LoadInProgressState extends LoadState {
 }
 
 class LoadSuccessState extends LoadState {
+  final List<dynamic> data;
+
+  LoadSuccessState(this.data);
   @override
-  List<Object> get props => [];
+  List<Object> get props => [data];
 }

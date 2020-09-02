@@ -10,11 +10,8 @@ class DetailsBloc extends Bloc<DetailsEvent, DetailsState> {
   @override
   Stream<DetailsState> mapEventToState(
     DetailsEvent event,
-  ) async* {
-    // TODO: implement mapEventToState
-  }
+  ) async* {}
 
   @override
-  // TODO: implement initialState
   DetailsState get initialState => throw UnimplementedError();
 }

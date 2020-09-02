@@ -1,8 +1,6 @@
 import 'dart:async';
-
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
 part 'load_event.dart';
 
 part 'load_state.dart';
@@ -13,13 +11,12 @@ class LoadBloc extends Bloc<LoadEvent, LoadState> {
     LoadEvent event,
   ) async* {
     yield LoadInProgressState();
-    // TODO: implement mapEventToState
     switch (event.runtimeType) {
       case LoadInProgressEvent:
-        yield* _mapLoadInProgressEventState(event);
+        yield LoadInProgressState();
         break;
       case LoadSuccessEvent:
-        yield LoadInitialState();
+        yield* _mapLoadSuccessEventToState(event);
         break;
     }
   }
@@ -27,8 +24,7 @@ class LoadBloc extends Bloc<LoadEvent, LoadState> {
   @override
   LoadState get initialState => LoadInitialState();
 
-  Stream<LoadState> _mapLoadInProgressEventState(
-      LoadInProgressEvent event) async* {
-    yield LoadInProgressState();
+  Stream<LoadState> _mapLoadSuccessEventToState(LoadSuccessEvent event) async* {
+    yield LoadSuccessState(event.jsonResponse);
   }
 }
