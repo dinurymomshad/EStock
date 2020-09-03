@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:estock/data/models/stock_model.dart';
 part 'load_event.dart';
 
 part 'load_state.dart';
@@ -10,7 +11,6 @@ class LoadBloc extends Bloc<LoadEvent, LoadState> {
   Stream<LoadState> mapEventToState(
     LoadEvent event,
   ) async* {
-    yield LoadInProgressState();
     switch (event.runtimeType) {
       case LoadInProgressEvent:
         yield LoadInProgressState();

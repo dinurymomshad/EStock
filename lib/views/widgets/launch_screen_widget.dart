@@ -40,7 +40,6 @@ class LaunchScreenWidget extends StatelessWidget {
               ],
             ),
           );
-          ;
         }
         return Center(child: CircularProgressIndicator());
       },
